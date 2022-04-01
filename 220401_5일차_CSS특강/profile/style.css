@@ -1,0 +1,136 @@
+/*
+div {
+  background-color: #ddd;
+  width: 400px; /*auto이면 ? 부모요소 기준 자동 조정 */
+/* height: 400px; auto 이면 ? 부모가 아니라 자식 기준으로 높이가 자동 조정 */
+/* margin : 20px; /*바깥쪽 여백*/
+/* padding: 100px; w전체 크기가 커짐 */
+/* border: 20px solid red; */
+/* margin: 0 auto; 상하 좌우 , 남는공간을 여백으로 자동으로 채우겠다! */
+
+body,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-image: url(images/background.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.wrapper {
+  background-color: #ddd;
+  width: 800px;
+  margin: 100px auto;
+}
+.header {
+  background-image: url(images/cover04.png);
+  background-size: cover;
+
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+}
+.header h1 {
+  font-size: 100px;
+}
+
+.header p {
+  border-top: 4px solid;
+  display: inline-block;
+  padding: 10px 20px;
+  /* width: fit-content; */
+  margin: 20px auto;
+}
+
+.header img.profile {
+  margin-top: 90px;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+.section {
+  background-image: url(images/icon-information.png);
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  background-color: white;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.section.skills {
+  background-image: url(images/icon-skills.png);
+}
+
+.section h2 {
+  color: salmon;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  border-left: 5px solid #ddd;
+  padding: 2px 10px;
+}
+
+.list li:hover {
+  border-color: pink;
+  color: pink;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.icon {
+width: 48px;
+height: 48px;
+  display: inline-block;
+  border-radius: 30px;
+  border: 2px solid #ddd;
+  color: white;
+  background-image: url(images/icons.png);
+  background-size: 144px 96px;
+  text-indent: -9999px; /*IR기법*/
+}
+
+.icon.github {
+  background-color: black;
+background-position: left top;
+}
+
+.icon.facebook {
+  background-color: dodgerblue;
+  background-position: center top;
+}
+
+.icon.email {
+  background-color: orangered;
+  background-position: right top;
+}
+
+.icon:hover {
+  background-position-y: bottom;
+}
