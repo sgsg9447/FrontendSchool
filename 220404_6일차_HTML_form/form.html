@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회사 고르기</title>
+  </head>
+  <body>
+    <header>
+      <h1>나와 잘 맞는 회사는?</h1>
+      <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아고 의미 없다~~!</p>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</legend>
+          <div>
+            <input type="radio" id="naver" name="company" value="네" />
+            <label for="naver"> 네</label>
+          </div>
+          <div>
+            <input type="radio" id="kakao" name="company" value="카" />
+            <label for="kakao">카</label>
+          </div>
+          <div>
+            <input type="radio" id="line" name="company" value="라" />
+            <label for="line">라</label>
+          </div>
+          <div>
+            <input type="radio" id="coupang" name="company" value="쿠" />
+            <label for="coupang">쿠</label>
+          </div>
+          <div>
+            <input type="radio" id="jecobe" name="company" value="베" />
+            <label for="jecobe">베</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두
+            골라주세요.
+          </legend>
+          <div>
+            <input
+              type="checkbox"
+              id="katalk"
+              name="messenger"
+              value="카카오톡"
+            />
+            <label for="katalk">카카오톡</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="linetalk"
+              name="messenger"
+              value="라인"
+            />
+            <label for="linetalk">라인</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="instagramdm"
+              name="messenger"
+              value="인스타그램 디엠"
+            />
+            <label for="instagramdm">인스타그램 디엠</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="nateon"
+              name="messenger"
+              value="네이트온"
+            />
+            <label for="nateon">네이트온</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="buddy"
+              name="messenger"
+              value="버디버디"
+            />
+            <label for="buddy">버디버디</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>면접에서 자신의 포부를 한 문장으로 얘기한다면?</legend>
+          <input type="text" id="aspiration" placeholder="내 답변" />
+          <label for="aspiration"></label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가
+            직전, 자기 자신에게 해주고 싶은말은??
+          </legend>
+          <input type="text" id="say" placeholder="내 답변" />
+          <label for="say"></label>
+        </fieldset>
+        <fieldset>
+          <legend>다음 중 기술 면접때 듣고 싶은 질문이 아닌것은?</legend>
+          <input
+            type="text"
+            id="question"
+            list="tech_interviews"
+            name="tech_interview"
+            placeholder="선택"
+          />
+          <datalist id="tech_interviews">
+            <option value="CS"></option>
+            <option value="OS"></option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend>취업을 희망하는 날자를 선택해주세요</legend>
+          <p>날짜</p>
+          <input type="date" id="startdate" name="startdate" />
+          <label for="startdate"></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>업무를 시작 하기에 가장 적당한 시간을 고르세요</legend>
+          <p>시간</p>
+          <input type="time" id="starttime" name="starttime" />
+        </fieldset>
+
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

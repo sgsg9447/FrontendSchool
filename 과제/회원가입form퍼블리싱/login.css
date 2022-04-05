@@ -1,0 +1,30 @@
+/* CSS초기화 */
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  color: pink;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-box {
+  background-color: #ddd;
+  width: 500px;
+  height: 500px;
+  margin: 10px auto;
+}
+
+.main-ul {
+  padding-right: 10px;
+  background-color: salmon;
+}
+
+footer {
+  background-color: #ddd;
+  text-align: center;
+}
