@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc 함수</title>
+    <style>
+        .message{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            padding: 0.5em;
+            border: 1px solid #000;
+            font-size: 1.5em;
+        }
+        .message__text{
+            width: 80%;
+            height: 100%;
+            border: none;
+            resize: none;
+        }
+
+        .message__text:focus{ outline: none;}
+
+        .message__send{
+            width: 20%;
+            height: 100%;
+            border-radius: 8px;
+            background-color: pink;
+        }
+    </style>
+</head> 
+<body>
+    <div class="message">
+        <textarea class="message__text"></textarea>
+        <button class="message__send">전송</button>
+    </div>
+</body>
+</html>
