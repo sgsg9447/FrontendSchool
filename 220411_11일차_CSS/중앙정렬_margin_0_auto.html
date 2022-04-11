@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .one {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        top: 100px;
+        left: 100px;
+        border: 5px solid black;
+      }
+      .two {
+        /* margin: auto; */
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        /*
+        right,left,top,bottom을 0을 준게 저 div가 쓸 수 있는 영역을 전체로 놔준 역할을 한것이고,
+        margin: auto를 줘서 쓸 수 있는 영역의 여백을 골고루 나누어 중앙정렬 시킨다는 것 */
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="two"></div>
+    </div>
+  </body>
+</html>
