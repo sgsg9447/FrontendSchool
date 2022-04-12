@@ -1,0 +1,92 @@
+/* IR기법 */
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.cont-login {
+  margin: 20px auto;
+  width: 350px;
+  padding: 18px 15px 17px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.cont-login a {
+  text-decoration: none;
+}
+
+.cont-login .txt-login {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.cont-login .link-login {
+  display: block;
+  padding: 10px 0 12px;
+  margin-bottom: 16px;
+  margin: 0 0 16px;
+  background: #711bff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.link-login .img-logo {
+  vertical-align: bottom;
+  margin-right: 4px;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cont-login .cont-find {
+  float: left;
+}
+
+.cont-find .img-find {
+  margin: -1px 4px 0 0;
+  float: left;
+}
+
+.cont-find .link-id::after {
+  float: right;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  margin: 0 4px;
+  background-color: #767676;
+}
+
+.cont-find [class^="link"] {
+  float: left;
+  color: #767676;
+}
+
+.cont-login .cont-join {
+  float: right;
+}
+
+.cont-join [class$="join"] {
+  float: left;
+  color: #767676;
+}
+
+.cont-join .img-join {
+  margin: -1px 4px 0 0;
+}
