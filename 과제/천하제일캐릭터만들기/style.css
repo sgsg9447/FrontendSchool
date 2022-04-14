@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e37fd8c9;
+}
+
+.ghost {
+  position: relative;
+  height: 200px;
+  width: 160px;
+}
+
+.body {
+  position: relative;
+  height: 200px;
+  width: 160px;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  background-color: #f0efda;
+  animation: float 4s ease infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    top: 0px;
+  }
+  40% {
+    top: -40px;
+  }
+}
+
+.face {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 67px;
+  left: 37px;
+  height: 41px;
+  width: 72px;
+}
+
+.eye {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #272b24;
+}
+
+.eye-left {
+  margin-right: 32px;
+}
+
+.smile {
+  height: 16px;
+  width: 32px;
+  margin-top: 6px;
+  margin-left: 20px;
+  background-color: #ffaa9e;
+  border-bottom-left-radius: 16px 12px;
+  border-bottom-right-radius: 16px 12px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.rosy {
+  position: absolute;
+  top: 28px;
+  width: 22px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #ffaa9e;
+}
+
+.rosy-left {
+  left: -6px;
+  transform: rotate(-8deg);
+}
+
+.rosy-right {
+  right: -6px;
+  transform: rotate(8deg);
+}
+
+.arm {
+  position: absolute;
+  top: 136px;
+  height: 40px;
+  width: 60px;
+  background-color: #f0efda;
+}
+
+.arm-left {
+  left: -4px;
+  border-radius: 60% 100%;
+  animation: arm-left 4s ease infinite;
+}
+
+@keyframes arm-left {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(50deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(40deg);
+  }
+}
+
+.arm-right {
+  right: -65px;
+  border-radius: 100% 60%;
+  animation: arm-right 4s ease infinite;
+}
+
+@keyframes arm-right {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(-50deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(-40deg);
+  }
+}
+
+.bottom {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: -1px;
+}
+
+.bottom div {
+  flex-grow: 1;
+  position: relative;
+  top: -14px;
+  height: 28px;
+  border-radius: 100%;
+  background-color: #f0efda;
+}
+
+.bottom div:nth-child(2n) {
+  top: -10px;
+  margin: 0 -2px;
+  border-top: 10px solid #f0efda;
+  background-color: transparent;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 200px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #191d18;
+  animation: shadow 4s ease infinite;
+}
+
+@keyframes shadow {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+  40% {
+    transform: translateX(-50%) scale(0.5);
+  }
+}
