@@ -1,0 +1,11 @@
+body {
+  background-color: #eae8fe;
+}
+
+.header-img {
+  width: 386px;
+  position: relative;
+  left: 50%;
+  /* left는 부모요소로부터 50%! */
+  transform: translateX(-50%);
+}
