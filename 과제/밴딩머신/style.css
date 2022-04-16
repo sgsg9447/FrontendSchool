@@ -9,3 +9,42 @@ body {
   /* left는 부모요소로부터 50%! */
   transform: translateX(-50%);
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 67px;
+}
+
+.main-left-vendingmachine {
+  border: 1px solid black;
+  width: 360px;
+  height: 545px;
+  margin-right: 28px;
+  background-color: white;
+  padding: 31px 27px 28px;
+}
+
+.main-right-myaccount {
+  border: 1px solid black;
+  width: 360px;
+  height: 545px;
+  background-color: white;
+}
+
+.cola-btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cola-item {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 94px;
+  height: 130px;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
