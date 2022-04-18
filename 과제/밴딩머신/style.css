@@ -11,21 +11,24 @@ body {
 }
 
 .main {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   margin-top: 67px;
 }
 
 .main-left-vendingmachine {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 360px;
   height: 545px;
   margin-right: 28px;
   background-color: white;
   padding: 31px 27px 28px;
+  box-sizing: border-box;
 }
 
 .main-right-myaccount {
+  box-sizing: border-box;
   border: 1px solid black;
   width: 360px;
   height: 545px;
@@ -35,11 +38,12 @@ body {
 .cola-btn-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .cola-item {
+  margin: 0 12px 12px 0;
   box-sizing: border-box;
   border: 1px solid black;
   width: 94px;
@@ -47,4 +51,73 @@ body {
   text-align: center;
   padding-top: 11px;
   padding-bottom: 9px;
+}
+
+.cola-item:nth-child(3n) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.money-box {
+  display: flex;
+}
+
+.balance,
+.deposit {
+  width: 200px;
+  height: 33px;
+  border: 1px solid black;
+  /* margin-right: 12px; */
+  margin-bottom: 11px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.money-btn {
+  width: 94px;
+  height: 33px;
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.money-box input {
+  font-size: 13px;
+}
+
+.select-box {
+  display: flex;
+}
+
+.select-item-box {
+  width: 200px;
+  height: 106px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.select-original-cola {
+  display: flex;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.select-img {
+  width: 18px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.select-btn {
+  width: 94px;
+  height: 106px;
+  margin-left: 12px;
 }

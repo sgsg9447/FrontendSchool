@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
   </head>
+
   <body>
     <div class="container">
       <header class="header">
@@ -23,15 +24,63 @@
               <div>Original_cola</div>
               <div>1000원</div>
             </li>
-            <li class="cola-item"></li>
-            <li class="cola-item"></li>
-            <li class="cola-item"></li>
-            <li class="cola-item"></li>
-            <li class="cola-item"></li>
+            <li class="cola-item">
+              <img src="img/Violet_Cola.png" alt="" />
+              <div>Violet_cola</div>
+              <div>1000원</div>
+            </li>
+            <li class="cola-item">
+              <img src="img/Yellow_Cola.png" alt="" />
+              <div>Yellow_cola</div>
+              <div>1000원</div>
+            </li>
+            <li class="cola-item">
+              <img src="img/Cool_Cola.png" alt="" />
+              <div>Cool_cola</div>
+              <div>1000원</div>
+            </li>
+            <li class="cola-item">
+              <img src="img/Green_Cola.png" alt="" />
+              <div>Green_cola</div>
+              <div>1000원</div>
+            </li>
+            <li class="cola-item">
+              <img src="img/Orange_Cola.png" alt="" />
+              <div>Orange_cola</div>
+              <div>1000원</div>
+            </li>
           </ul>
+          <div class="money-box">
+            <div class="balance">
+              <span>잔액 : </span>
+              <span>1000원</span>
+            </div>
+            <button class="money-btn">거스름돈 반환</button>
+          </div>
+          <div class="money-box">
+            <input class="deposit" type="text" placeholder="입금액 입력" />
+            <button class="money-btn">입금</button>
+          </div>
+          <div class="select-box">
+            <div class="select-item-box">
+              <div class="select-original-cola">
+                <img class="select-img" src="img/Original_Cloa.png" alt="" />
+                <p>Original_Cloa</p>
+                <p>1</p>
+              </div>
+            </div>
+            <button class="select-btn">획득</button>
+          </div>
         </section>
         <section class="main-right-myaccount"></section>
       </main>
     </div>
   </body>
+  <script>
+    const colas = document.querySelectorAll(".cola-item");
+
+    colas[0].addEventListener("click", () => {
+      console.log("clicked");
+    });
+  </script>
 </html>
