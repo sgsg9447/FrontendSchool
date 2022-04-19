@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOCSS</title>
+    <style>
+      .btn {
+        width: 200px;
+        height: 80px;
+        font-size: 30px;
+      }
+
+      .btn-close {
+        background-color: pink;
+        color: #fff;
+        border: 3px solid palevioletred;
+      }
+      /* 컨테이너에 스타일이 종속되어 있는 상태 */
+      #main .btn {
+        width: 300px;
+        padding: 20px 10px;
+        margin: 10px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      #main .general {
+        background-color: aquamarine;
+        color: black;
+      }
+
+      #main .warning {
+        background-color: azure;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="btn">버튼</button>
+    <button type="button" class="btn btn-close">버튼2</button>
+    <main id="main">
+      <button type="button" class="btn general">기본 버튼</button>
+      <button type="button" class="btn warning">취소 버튼</button>
+    </main>
+  </body>
+</html>
