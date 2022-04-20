@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형동영상</title>
+    <style>
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+      .cont-video {
+        position: relative;
+        padding-top: 56.25%;
+        /* padding-top, padding-bottom 속성의 % 값은 부모 요소의 넓이에 비례합니다. */
+        /* 예를 들어 부모의 넚이가 1200px 이라면 padding-top=50% 의 값은 600px 과 같습니다. */
+      }
+
+      .video-next-level {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .parent {
+        background-color: pink;
+      }
+
+      .child {
+        height: 40%;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="cont-video">
+      <iframe
+        class="video-next-level"
+        src="https://www.youtube.com/embed/4TWR90KJl84?autoplay=1&mute=1&loop=1&playlist=4TWR90KJl84&controls=1"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </article>
+
+    <div class="parent">
+      <div class="child">hello</div>
+    </div>
+  </body>
+</html>
