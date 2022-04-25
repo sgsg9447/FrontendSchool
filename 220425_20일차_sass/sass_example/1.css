@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* 2. 두줄 주석 */
+ul li {
+  color: red;
+  font-size: 10px;
+}
+
+/*하이루*/
+.one {
+  color: red;
+}
+
+.one .two {
+  color: green;
+}
+
+.one .three {
+  color: blue;
+}
+
+.add-icon {
+  background-image: url("./assets/arrow-right-solid.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.box:hover {
+  background-color: green;
+}
+
+.one {
+  color: red;
+}
+
+.one .two {
+  color: blue;
+}
+
+.three {
+  color: green;
+}
+
+.one {
+  color: #000;
+}
+
+.two {
+  color: #f00;
+}
+
+.three {
+  color: #00f;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.title2 {
+  font-size: 19px;
+}
+/*# sourceMappingURL=1.css.map */
