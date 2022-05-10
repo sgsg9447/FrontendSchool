@@ -217,21 +217,94 @@ import random from "./getRandom";
 
 //생성자 함수
 
-// const sseul = {
-//   firstName: "seulgi",
-//   lastName: "kim",
+// const heropy = {
+//   firstName: "Heropy",
+//   lastName: "Park",
 //   getFullName: function () {
 //     return `${this.firstName} ${this.lastName}`;
 //   },
 // };
 
+// console.log(heropy);
+
+// function User(first, last) {
+//   this.firstName = first;
+//   this.lastName = last;
+// }
+
+// User.prototype.getFullName = function(){
+//   return `${this.firstName} ${this.lastName}`
+// }
+
+// const sseul = new User("sseul", "kim");
+
+// console.log(sseul);
+
+//this
+// 일반(Normal)함수는 호출 위치에 따라 this 정의!
+// 화살표(Arrow)함수는 자신이 선언된 함수 범위에서 this 정의!
+
+// const sseul = {
+//   name: "Sseul",
+//   normal: function () {
+//     console.log(this.name);
+//   },
+//   arrow: () => {
+//     console.log(this.name);
+//   },
+// };
+
+// sseul.normal();
+// sseul.arrow();
+
+// const timer = {
+//   name: "Sseul!!",
+//   timeout: function () {
+//     setTimeout( () =>{
+//       console.log(this.name);
+//     }, 2000);
+//   },
+// };
+
+// timer.timeout();
+
+//ES6 Classes
+
+// class User {
+//   constructor(first, last) {
+//     this.firstName = first;
+//     this.lastName = last;
+//   }
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// }
+
+// const sseul = new User("Sseul", "Kim");
+
+// console.log(sseul);
 // console.log(sseul.getFullName());
 
-function user(first, last) {
-  this.firstName = first;
-  this.lastName = last;
-}
+//상속(확장)
+// class Vehicle{
+//   constructor(name, wheel) {
+//     this.name = name
+//     this.wheel = wheel
+//   }
+// }
 
-const sseul = new user("Sseul", "Kim");
+// const myVehicle = new Vehicle('운송수단', 2)
+// console.log(myVehicle)
 
-console.log(sseul);
+// class Bicycle extends Vehicle{
+//   constructor(name, wheel) {
+//     super(name, wheel)
+//   }
+// }
+
+// class Car extends Vehicle{
+//   constructor(name, wheel, license){
+//     super(name, wheel)
+//     this.license = license
+//   }
+// }
