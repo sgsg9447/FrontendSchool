@@ -1,0 +1,50 @@
+html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: radial-gradient(
+    96.74% 276.79% at 3.59% 5.28%,
+    #f0f4ff 0%,
+    #a5b6ee 100%
+  );
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 400px;
+  height: 360px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+}
+
+.button-box {
+  display: flex;
+}
+
+footer {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateY(-50%);
+  color: white;
+  display: flex;
+  align-items: center;
+}
